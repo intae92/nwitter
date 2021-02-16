@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { dbService, storageService } from "fbase";
 
 const Nweet = ({ nweetObj, isOnwer }) => {
-  console.log(nweetObj.attachmentUrl);
   const [editing, setEditing] = useState(false);
   const [newNweet, setNewNweet] = useState(nweetObj.text);
   const onDeleteClick = async () => {
